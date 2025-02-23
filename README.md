@@ -88,10 +88,10 @@ npm run build
 ## 📸 Screenshots  
 
 ### 🖥️ Desktop View
-![alt text](image.png)
+![img](DesktopScreenshot.png)
 
 ### 📱 Mobile View 
-![alt text](image.png)
+![img](MobileScreenshot.png)
 ---
 
 ## 📜 License  
