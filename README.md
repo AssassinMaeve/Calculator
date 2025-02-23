@@ -88,13 +88,13 @@ npm run build
 ## 📸 Screenshots  
 
 ### 🖥️ Desktop View
-![img](Calculator/img/DesktopScreenshot.png)
+![img](img\DesktopScreenshot.png)
 
 ### 📱 Mobile View 
-![img](Calculator/img/MobileScreenshot.png)
+![img](img\MobileScreenshot.png)
 ---
 
-## Site Deployment
+## 🖥️ Site Deployment
 https://assassinmaeve.github.io/Calculator/
 
 ## 📜 License  
