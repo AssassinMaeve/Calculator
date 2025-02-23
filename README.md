@@ -64,6 +64,10 @@ If using Webpack for development:
 ```bash
 npm run dev
 ```
+or to run the program use:
+```bash
+npm run start
+```
 
 For production build:  
 ```bash
