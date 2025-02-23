@@ -1,0 +1,94 @@
+/* ===== General Page Styling ===== */
+body {
+  display: flex; /* Centers the calculator horizontally */
+  justify-content: center; /* Aligns content in the center horizontally */
+  align-items: center; /* Aligns content in the center vertically */
+  height: 100vh; /* Makes the body take up the full viewport height */
+  background-color: #202020; /* Dark background for contrast */
+  font-family: Arial, sans-serif; /* Uses Arial as the default font */
+}
+
+/* ===== Calculator Container ===== */
+.calculator {
+  width: 300px; /* Sets a fixed width for the calculator */
+  padding: 20px; /* Adds spacing inside the calculator */
+  border-radius: 10px; /* Rounds the corners of the calculator */
+  
+  /* Shadow Effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Creates a subtle shadow effect */
+  
+  text-align: center; /* Aligns the text inside the calculator */
+  border: 3px solid #333; /* Adds a dark border around the calculator */
+}
+
+/* ===== Display Screen Styling ===== */
+#display {
+  width: 100%; /* Makes the display span the full width of the calculator */
+  height: 50px; /* Sets a fixed height for the display */
+  font-size: 1.5rem; /* Makes the displayed text larger */
+  text-align: right; /* Aligns numbers to the right for readability */
+  
+  padding-top: 10px; /* Adds space at the top */
+  padding-bottom: 10px; /* Adds space at the bottom */
+  
+  border: none; /* Removes the default border */
+  background: #eee; /* Light gray background for contrast */
+  
+  margin-right: 5px; /* Adds a small margin to the right */
+  margin-bottom: 10px; /* Adds spacing below the display */
+  
+  border-radius: 5px; /* Slightly rounds the corners of the display */
+}
+
+/* ===== Button Grid Layout ===== */
+.buttons {
+  display: grid; /* Enables grid layout for buttons */
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+/* ===== General Button Styling ===== */
+button {
+  padding: 15px; /* Makes buttons larger for easy clicking */
+  font-size: 1.5rem; /* Ensures text is large and readable */
+  border: none; /* Removes default button borders */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  border-radius: 100px; /* Creates circular buttons */
+  
+  transition: 0.2s; /* Adds a smooth transition effect on interactions */
+  box-shadow: #000; /* Applies a shadow effect for depth */
+  border-color: #000; /* Sets a black border */
+  background-color: #626865; /* Gray background color */
+  color: white; /* Makes text color white for readability */
+}
+
+/* ===== Button Click Animation ===== */
+button:active {
+  transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+
+/* ===== Special Buttons ===== */
+
+/* Operator Buttons (+, -, ×, ÷) */
+.operator { 
+  background: #d5d5d5; /* Light gray background for distinction */
+  color: #212121; /* Dark text for contrast */
+}
+
+/* Memory Function Buttons (MC, MR, M+, M-) */
+.optionalOperator { 
+  background: #626865; /* Dark gray background */
+  color: #fff; /* White text for better readability */
+}
+
+/* Equals Button (=) */
+.equal { 
+  background: #2aa56a; /* Dark green to stand out */
+  color: #fff; /* White text for contrast */
+}
+
+/* Clear Button (C) */
+.clear { 
+  background: #e74c3c; /* Red to indicate clearing/resetting */
+  color: #fff; /* White text for readability */
+}

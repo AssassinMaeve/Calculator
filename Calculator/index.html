@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <script src="js/app.js"></script>
+
+  <div class="calculator">
+    <!-- Display Screen -->
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+
+        <!-- Memory Function Buttons -->
+        <button class="optionalOperator" onclick="memoryClear()">MC</button> <!-- Clears memory -->
+        <button class="optionalOperator" onclick="memoryRecall()">MR</button> <!-- Recalls memory value -->
+        <button class="optionalOperator" onclick="memoryAdd()">M+</button> <!-- Adds display value to memory -->
+        <button class="optionalOperator" onclick="memorySubtract()">M-</button> <!-- Subtracts display value from memory -->
+        
+        <!-- Utility Buttons -->
+        <button class="clear" onclick="clearDisplay()">C</button> <!-- Clears the display -->
+        <button class="operator" onclick="calculateSquareRoot()">√</button> <!-- Calculates square root -->
+        <button class="operator" onclick="calculatePercentage()">%</button> <!-- Converts to percentage -->
+        <button class="operator" onclick="backspace()">←</button> <!-- Deletes last entered character -->
+        
+        <!-- Number Buttons (7, 8, 9) & Subtraction Operator -->
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('-')">-</button> <!-- Subtraction operator -->
+        
+        <!-- Number Buttons (4, 5, 6) & Addition Operator -->
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('+')">+</button> <!-- Addition operator -->
+        
+        <!-- Number Buttons (1, 2, 3) -->
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        
+        <!-- Multiplication and Division Operators -->
+        <button class="operator" onclick="appendValue('*')">x</button> <!-- Multiplication operator -->
+        <button class="operator" onclick="appendValue('/')">/</button> <!-- Division operator -->
+        
+        <!-- Number Button 0, Decimal Point, and Equals -->
+        <button onclick="appendValue('0')" style="grid-column: span 1;">0</button> <!-- Zero button -->
+        <button onclick="appendValue('.')">.</button> <!-- Decimal point -->
+        
+        <!-- Equal Button -->
+        <button class="equal" onclick="calculate()">=</button> <!-- Evaluates the entered expression -->
+    </div>
+</div>
+
+
+  
+  
+
+</body>
+
+</html>
